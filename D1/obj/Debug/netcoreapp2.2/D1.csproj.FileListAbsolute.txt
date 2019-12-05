@@ -1,0 +1,11 @@
+E:\CS\adventOfCode2019\D1\bin\Debug\netcoreapp2.2\D1.deps.json
+E:\CS\adventOfCode2019\D1\bin\Debug\netcoreapp2.2\D1.runtimeconfig.json
+E:\CS\adventOfCode2019\D1\bin\Debug\netcoreapp2.2\D1.runtimeconfig.dev.json
+e:\CS\adventOfCode2019\D1\bin\Debug\netcoreapp2.2\D1.dll
+e:\CS\adventOfCode2019\D1\bin\Debug\netcoreapp2.2\D1.pdb
+e:\CS\adventOfCode2019\D1\obj\Debug\netcoreapp2.2\D1.csprojAssemblyReference.cache
+e:\CS\adventOfCode2019\D1\obj\Debug\netcoreapp2.2\D1.csproj.CoreCompileInputs.cache
+e:\CS\adventOfCode2019\D1\obj\Debug\netcoreapp2.2\D1.AssemblyInfoInputs.cache
+e:\CS\adventOfCode2019\D1\obj\Debug\netcoreapp2.2\D1.AssemblyInfo.cs
+e:\CS\adventOfCode2019\D1\obj\Debug\netcoreapp2.2\D1.dll
+e:\CS\adventOfCode2019\D1\obj\Debug\netcoreapp2.2\D1.pdb
