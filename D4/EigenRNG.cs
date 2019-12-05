@@ -7,7 +7,6 @@ namespace D4
     {
         public int minVal;
         public int maxVal;
-
         int aantal;
         
         public EigenRNG(string inputString)
