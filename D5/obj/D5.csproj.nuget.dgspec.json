@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jan/Documents/projecten/AdventOfCode/D5/D5.csproj": {}
+  },
+  "projects": {
+    "/home/jan/Documents/projecten/AdventOfCode/D5/D5.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jan/Documents/projecten/AdventOfCode/D5/D5.csproj",
+        "projectName": "D5",
+        "projectPath": "/home/jan/Documents/projecten/AdventOfCode/D5/D5.csproj",
+        "packagesPath": "/home/jan/.nuget/packages/",
+        "outputPath": "/home/jan/Documents/projecten/AdventOfCode/D5/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/jan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

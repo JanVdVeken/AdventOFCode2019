@@ -1,0 +1,11 @@
+/home/jan/Documents/projecten/AdventOfCode/D5/bin/Debug/netcoreapp2.2/D5.deps.json
+/home/jan/Documents/projecten/AdventOfCode/D5/bin/Debug/netcoreapp2.2/D5.runtimeconfig.json
+/home/jan/Documents/projecten/AdventOfCode/D5/bin/Debug/netcoreapp2.2/D5.runtimeconfig.dev.json
+/home/jan/Documents/projecten/AdventOfCode/D5/bin/Debug/netcoreapp2.2/D5.dll
+/home/jan/Documents/projecten/AdventOfCode/D5/bin/Debug/netcoreapp2.2/D5.pdb
+/home/jan/Documents/projecten/AdventOfCode/D5/obj/Debug/netcoreapp2.2/D5.csprojAssemblyReference.cache
+/home/jan/Documents/projecten/AdventOfCode/D5/obj/Debug/netcoreapp2.2/D5.csproj.CoreCompileInputs.cache
+/home/jan/Documents/projecten/AdventOfCode/D5/obj/Debug/netcoreapp2.2/D5.AssemblyInfoInputs.cache
+/home/jan/Documents/projecten/AdventOfCode/D5/obj/Debug/netcoreapp2.2/D5.AssemblyInfo.cs
+/home/jan/Documents/projecten/AdventOfCode/D5/obj/Debug/netcoreapp2.2/D5.dll
+/home/jan/Documents/projecten/AdventOfCode/D5/obj/Debug/netcoreapp2.2/D5.pdb
