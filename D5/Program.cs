@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Collections.Generic;
 
 namespace D5
 {
@@ -6,7 +8,18 @@ namespace D5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Inlezen IntCodes
+            string inputFile = File.ReadAllText(@"..\OpdrachtGegevens\D2O1.txt");
+            string[] stringIntCodeProgram = inputFile.Split(',');
+            List<int> intCodeProgram = new List<int>();
+            foreach(string intCode in stringIntCodeProgram)
+            {
+                intCodeProgram.Add(Int32.Parse(intCode));
+            }
+
+            //Aanmaken intCodeComputer
+            IntCodeComputer icc = new IntCodeComputer();
+            Console.WriteLine(icc.test());
         }
     }
 }
