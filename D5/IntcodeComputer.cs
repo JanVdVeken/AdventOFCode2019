@@ -81,19 +81,96 @@ namespace D5
                     case 4:
                         instructie4(inputPerCode[0]);
                         break;  
+                    case 5:
+                        instructie5(inputPerCode[0],inputPerCode[1]);
+                        break; 
+                    case 6:
+                        instructie6(inputPerCode[0],inputPerCode[1]);
+                        break; 
+                    case 7:
+                        instructie7(inputPerCode[0],inputPerCode[1],inputPerCode[2]);
+                        break; 
+                    case 8:
+                        instructie8(inputPerCode[0],inputPerCode[1],inputPerCode[2]);
+                        break; 
                 }
             }
-        }
-        public void instructie3(int input1)
+        }   
+        public void instructie8(int input1, int input2, int input3)
         {
-            programma[input1] = inputWaarde;
-            pointer += 2;
+            if(programma[input1] == programma[input2])
+            {
+                programma[input3] = 1;
+            }
+            else
+            {
+                programma[input3] = 0;
+            }
+            pointer += 4;
+        } 
+        public void instructie7(int input1, int input2, int input3)
+        {
+            if(programma[input1] < programma[input2])
+            {
+                programma[input3] = 1;
+            }
+            else
+            {
+                programma[input3] = 0;
+            }
+            pointer += 4;
+        }  
+        public void instructie6(int input1, int input2)
+        {
+            if(programma[input1] == 0)
+            {
+                pointer = programma[input2];
+            }
+            else
+            {
+                pointer += 3;
+            }
+        }
+        public void instructie5(int input1, int input2)
+        {
+            if(programma[input1] != 0)
+            {
+                pointer = programma[input2];
+            }
+            else
+            {
+                pointer += 3;
+            }
         }
         public void instructie4(int input1)
         {
             Console.WriteLine(programma[input1]);
             pointer += 2;
         }
+        public void instructie3(int input1)
+        {
+            programma[input1] = inputWaarde;
+            pointer += 2;
+        }
+        public void instructie2(int input1, int input2, int input3 )
+        {
+            programma[input3] = programma[input1] * programma[input2];
+            pointer += 4;
+        }
+        public void instructie1(int input1, int input2, int input3 )
+        {
+            programma[input3] = programma[input1] + programma[input2];
+            pointer += 4;
+        }
+
+        public void printProgramma()
+        {
+            foreach(int code in programma)
+            {
+                Console.WriteLine(code);
+            }
+        }
+        
         public  List<int> getParameters(int input)
         {
             List<int> parameters = new List<int>();
@@ -113,23 +190,9 @@ namespace D5
             Console.WriteLine(programma[0]);
         }
 
-        public void instructie1(int input1, int input2, int output )
+        public void setInput(int input)
         {
-            programma[output] = programma[input1] + programma[input2];
-            pointer += 4;
-        }
-        public void instructie2(int input1, int input2, int output )
-        {
-            programma[output] = programma[input1] * programma[input2];
-            pointer += 4;
-        }
-
-        public void printProgramma()
-        {
-            foreach(int code in programma)
-            {
-                Console.WriteLine(code);
-            }
+            inputWaarde = input;
         }
 
     }

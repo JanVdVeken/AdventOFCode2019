@@ -19,6 +19,7 @@ namespace D5
 
             //Aanmaken intCodeComputer
             IntCodeComputer icc = new IntCodeComputer(intCodeProgram);
+            icc.setInput(5);
             icc.startBerekeningen();
             //icc.printEersteWaarde();
         }
