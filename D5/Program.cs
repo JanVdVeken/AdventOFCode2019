@@ -18,8 +18,11 @@ namespace D5
             }
 
             //Aanmaken intCodeComputer
-            IntCodeComputer icc = new IntCodeComputer();
-            Console.WriteLine(icc.test());
+            IntCodeComputer icc = new IntCodeComputer(intCodeProgram);
+            icc.zetSpecifiekeWaarde(1,12);
+            icc.zetSpecifiekeWaarde(2,2);
+            icc.startBerekeningen();
+            icc.printEersteWaarde();
         }
     }
 }
