@@ -9,7 +9,7 @@ namespace D5
         static void Main(string[] args)
         {
             //Inlezen IntCodes
-            string inputFile = File.ReadAllText(@"..\OpdrachtGegevens\D2O1.txt");
+            string inputFile = File.ReadAllText(@"..\OpdrachtGegevens\D5O1.txt");
             string[] stringIntCodeProgram = inputFile.Split(',');
             List<int> intCodeProgram = new List<int>();
             foreach(string intCode in stringIntCodeProgram)
@@ -19,10 +19,8 @@ namespace D5
 
             //Aanmaken intCodeComputer
             IntCodeComputer icc = new IntCodeComputer(intCodeProgram);
-            icc.zetSpecifiekeWaarde(1,12);
-            icc.zetSpecifiekeWaarde(2,2);
             icc.startBerekeningen();
-            icc.printEersteWaarde();
+            //icc.printEersteWaarde();
         }
     }
 }
