@@ -10,7 +10,7 @@ namespace D6
         static void Main(string[] args)
         {           
              //input
-            string[] inputFile = File.ReadAllLines(@"..\OpdrachtGegevens\D6O2_test.txt");
+            string[] inputFile = File.ReadAllLines(@"..\OpdrachtGegevens\D6O2.txt");
             List<SpaceObject> spaceObjects = new List<SpaceObject>();
 
             //Verwerlomg
@@ -35,13 +35,28 @@ namespace D6
             while(sanPosition.Center != "COM")
             {
                 sanPosition = spaceObjects.First(x => x.Orbit == sanPosition.Center);
-                sanPlanets.Add(myPosition);
+                sanPlanets.Add(sanPosition);
             };          
             
             //Look for common intersection
-            SpaceObject intersectionObject = sanPlanets.Intersect(myPlanets,new MyEqualityComparer()).Last();
-            Console.WriteLine(intersectionObject.Center);
-            int Totaal = 2;
+            SpaceObject intersectionObject = sanPlanets.Intersect(myPlanets,new MyEqualityComparer()).First();
+            //Console.WriteLine(intersectionObject.Orbit);
+
+            //Look for distances to the intersection from both sides
+            int Totaal = 0;
+            myPosition = spaceObjects.First(x => x.Orbit == "YOU");
+            sanPosition = spaceObjects.First(x => x.Orbit == "SAN");
+            while(myPosition.Center != intersectionObject.Orbit)
+            {
+                myPosition = spaceObjects.First(x => x.Orbit == myPosition.Center);
+                Totaal ++;
+            };
+             while(sanPosition.Center != intersectionObject.Orbit)
+            {
+                sanPosition = spaceObjects.First(x => x.Orbit == sanPosition.Center);
+                Totaal ++;
+            }; 
+            Console.WriteLine(Totaal);
         
         }
 
