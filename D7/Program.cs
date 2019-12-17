@@ -29,14 +29,13 @@ namespace D7
                 List<int> testInput = testInputTemp.ToList();
                 //Aanmaken intCodeComputers
                 IntCodeComputer ampA = new IntCodeComputer(intCodeProgram,testInput[0]);
-                ampA.addInput(0);
                 IntCodeComputer ampB = new IntCodeComputer(intCodeProgram,testInput[1]);
                 IntCodeComputer ampC = new IntCodeComputer(intCodeProgram,testInput[2]);
                 IntCodeComputer ampD = new IntCodeComputer(intCodeProgram,testInput[3]);
                 IntCodeComputer ampE = new IntCodeComputer(intCodeProgram,testInput[4]);
 
                 //Berekeningen doen
-                
+                ampA.addInput(0);
                 ampA.startBerekeningen();
                 ampB.addInput(ampA.returnOutput());
                 ampB.startBerekeningen();
@@ -46,11 +45,14 @@ namespace D7
                 ampD.startBerekeningen();
                 ampE.addInput(ampD.returnOutput());
                 ampE.startBerekeningen();
+                ampA.addInput(ampE.returnOutput());
                 output = output < ampE.returnOutput() ? ampE.returnOutput() : output;
-
             }
             
             Console.WriteLine(output);
+            //icc.setInput(5);
+            //icc.startBerekeningen();
+            //icc.printEersteWaarde();
         }
 
         static IEnumerable<IEnumerable<T>> GetPermutations<T>(IEnumerable<T> list, int length)

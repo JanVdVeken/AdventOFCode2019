@@ -12,7 +12,6 @@ namespace D7
         int pointerInput =0;
         List<int> inputWaarde = new List<int>();
         int outputValue;
-        //public bool Test = true;
         public IntCodeComputer(List<int> intCodes, int input1)
         {
             this.programma = intCodes;
@@ -34,8 +33,8 @@ namespace D7
             *   Deze parametes worden meegegeven met de opCode
             */
             pointer = 0;
-            Boolean verderdoen = true;
-            while (verderdoen)
+            int opCode = 0;
+            while (opCode != 99)
             {
                 /*
                 *   We willen de input opsplitsen in parameters en in de werkelijke opCode
@@ -43,7 +42,7 @@ namespace D7
                 */
 
                 //Geeft de rest bij deling honderd => Laatste 2 cijfers
-                int opCode = programma[pointer] % 100;            
+                opCode = programma[pointer] % 100;            
 
                 //De overige cijfers zijn de parameters
                 List<int> parameters = getParameters(programma[pointer]/100); 
@@ -71,8 +70,6 @@ namespace D7
                switch (opCode)
                 {
                     case 99:
-                        verderdoen = false;
-                        //Test= false;
                         break;
                     case 1:
                         instructie1(inputPerCode[0],inputPerCode[1],inputPerCode[2]);
