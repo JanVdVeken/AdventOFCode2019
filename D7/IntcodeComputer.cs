@@ -9,10 +9,12 @@ namespace D7
     {
         List<int> programma;
         int pointer;
-        int inputWaarde = 1;
-        public IntCodeComputer(List<int> intCodes)
+        int pointerInput =0;
+        List<int> inputWaarde = new List<int>();
+        public IntCodeComputer(List<int> intCodes, int input1)
         {
             this.programma = intCodes;
+            this.inputWaarde.Add(input1);
         }
         public void zetSpecifiekeWaarde(int positie, int waarde)
         {
@@ -149,8 +151,9 @@ namespace D7
         }
         public void instructie3(int input1)
         {
-            programma[input1] = inputWaarde;
+            programma[input1] = inputWaarde[pointerInput];
             pointer += 2;
+            pointerInput ++;
         }
         public void instructie2(int input1, int input2, int input3 )
         {
@@ -192,7 +195,7 @@ namespace D7
 
         public void setInput(int input)
         {
-            inputWaarde = input;
+            inputWaarde.Add(input);
         }
 
     }

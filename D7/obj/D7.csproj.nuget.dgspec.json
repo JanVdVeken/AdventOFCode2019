@@ -1,34 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jan.vanderveken\\OneDrive - protime.eu\\6_Persoonlijk\\AoC\\AdventOFCode2019\\D7\\D7.csproj": {}
+    "E:\\CS\\adventOfCode2019\\D7\\D7.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jan.vanderveken\\OneDrive - protime.eu\\6_Persoonlijk\\AoC\\AdventOFCode2019\\D7\\D7.csproj": {
+    "E:\\CS\\adventOfCode2019\\D7\\D7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jan.vanderveken\\OneDrive - protime.eu\\6_Persoonlijk\\AoC\\AdventOFCode2019\\D7\\D7.csproj",
+        "projectUniqueName": "E:\\CS\\adventOfCode2019\\D7\\D7.csproj",
         "projectName": "D7",
-        "projectPath": "C:\\Users\\jan.vanderveken\\OneDrive - protime.eu\\6_Persoonlijk\\AoC\\AdventOFCode2019\\D7\\D7.csproj",
-        "packagesPath": "C:\\Users\\jan.vanderveken\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jan.vanderveken\\OneDrive - protime.eu\\6_Persoonlijk\\AoC\\AdventOFCode2019\\D7\\obj\\",
+        "projectPath": "E:\\CS\\adventOfCode2019\\D7\\D7.csproj",
+        "packagesPath": "C:\\Users\\Jan\\.nuget\\packages\\",
+        "outputPath": "E:\\CS\\adventOfCode2019\\D7\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jan.vanderveken\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Jan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -39,23 +37,20 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
+        "netcoreapp2.2": {
+          "dependencies": {
             "Microsoft.NETCore.App": {
-              "privateAssets": "all"
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
         }
       }
     }

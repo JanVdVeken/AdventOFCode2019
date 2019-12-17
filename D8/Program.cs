@@ -10,8 +10,8 @@ namespace D8
         {
             string[] inputFile = File.ReadAllLines(@"..\OpdrachtGegevens\D8O1.txt");
             ImageFile password = new ImageFile(inputFile[0]);
-            Console.WriteLine("layer met minste 0: 1 * 2 = {0}",password.calcFewestZeros());
             password.printLayers();
+            Console.WriteLine("layer met minste 0: 1 * 2 = {0}",password.calcFewestZeros());
             password.calcFinalImage();
             
         }

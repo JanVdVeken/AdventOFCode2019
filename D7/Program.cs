@@ -17,10 +17,12 @@ namespace D7
                 intCodeProgram.Add(Int32.Parse(intCode));
             }
 
+            List<int> PossiblePermutations = new List<int>(){0,1,2,3,4};
+
             //Aanmaken intCodeComputer
-            IntCodeComputer icc = new IntCodeComputer(intCodeProgram);
-            icc.setInput(5);
-            icc.startBerekeningen();
+            IntCodeComputer icc = new IntCodeComputer(intCodeProgram,1);
+            //icc.setInput(5);
+            //icc.startBerekeningen();
             //icc.printEersteWaarde();
         }
     }
