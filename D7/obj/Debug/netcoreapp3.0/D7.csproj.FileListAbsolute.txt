@@ -1,0 +1,11 @@
+c:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\bin\Debug\netcoreapp3.0\D7.exe
+C:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\bin\Debug\netcoreapp3.0\D7.deps.json
+C:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\bin\Debug\netcoreapp3.0\D7.runtimeconfig.json
+C:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\bin\Debug\netcoreapp3.0\D7.runtimeconfig.dev.json
+c:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\bin\Debug\netcoreapp3.0\D7.dll
+c:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\bin\Debug\netcoreapp3.0\D7.pdb
+c:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\obj\Debug\netcoreapp3.0\D7.csprojAssemblyReference.cache
+c:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\obj\Debug\netcoreapp3.0\D7.AssemblyInfoInputs.cache
+c:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\obj\Debug\netcoreapp3.0\D7.AssemblyInfo.cs
+c:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\obj\Debug\netcoreapp3.0\D7.dll
+c:\Users\jan.vanderveken\OneDrive - protime.eu\6_Persoonlijk\AoC\AdventOFCode2019\D7\obj\Debug\netcoreapp3.0\D7.pdb
