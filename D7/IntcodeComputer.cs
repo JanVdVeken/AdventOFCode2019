@@ -11,6 +11,8 @@ namespace D7
         int pointer;
         int pointerInput =0;
         List<int> inputWaarde = new List<int>();
+        int outputValue;
+        //public bool Test = true;
         public IntCodeComputer(List<int> intCodes, int input1)
         {
             this.programma = intCodes;
@@ -70,6 +72,7 @@ namespace D7
                 {
                     case 99:
                         verderdoen = false;
+                        //Test= false;
                         break;
                     case 1:
                         instructie1(inputPerCode[0],inputPerCode[1],inputPerCode[2]);
@@ -146,7 +149,8 @@ namespace D7
         }
         public void instructie4(int input1)
         {
-            Console.WriteLine(programma[input1]);
+            //Console.WriteLine(programma[input1]);
+            outputValue = programma[input1];
             pointer += 2;
         }
         public void instructie3(int input1)
@@ -193,9 +197,13 @@ namespace D7
             Console.WriteLine(programma[0]);
         }
 
-        public void setInput(int input)
+        public void addInput(int input)
         {
             inputWaarde.Add(input);
+        }
+        public int returnOutput()
+        {
+            return outputValue;
         }
 
     }
