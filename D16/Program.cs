@@ -10,7 +10,7 @@ namespace D16
     {
         static void Main(string[] args)
         {
-            string inputFile = File.ReadAllText(@"..\OpdrachtGegevens\D16O1_test.txt");           
+            string inputFile = File.ReadAllText(@"..\OpdrachtGegevens\D16O1.txt");           
             List<int> inputList = inputExtensions.GetIntList(inputFile);
             //Console.WriteLine(inputList[inputList.Count]);
             FlawedFrequencyTransmission FFT = new FlawedFrequencyTransmission(inputList);
