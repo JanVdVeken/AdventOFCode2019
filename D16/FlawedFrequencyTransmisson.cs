@@ -19,9 +19,11 @@ namespace D16
             
             for(int phase = 0; phase < x; phase++)
             {
+                Console.WriteLine("Starting Phase: " + phase.ToString());
                 List<int> tempSolution = new List<int>();
                 for(int k = 1; k<= InputList.Count;k++)
                 {
+                    Console.WriteLine("Iteratie: " + k + "/"+InputList.Count);
                     //Opmaken van de lijst van de vermenigvuldiging. Deze lijst is gebaseerd op de 0 1 0 -1 lijst
                     //Het aantal keer dat een cijfer zich herhaalt wordt bepaald door iteratie (tussen 1 en k keer)
                     List<int> RepeatingPatternPhaseX = new List<int>();
@@ -56,9 +58,11 @@ namespace D16
             }
         }
 
-        public string getFirstEightOutput()
+        public string getEightOutput(long start)
         {
+            for(long i = 0; i <start; i++) Outputstring.Remove(0,1);
             return (Outputstring + "        ").Substring(0,8);
+
         }
 
         public void SetRepeatingPatern(List<int> input)
