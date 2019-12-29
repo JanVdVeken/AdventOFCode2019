@@ -23,7 +23,7 @@ namespace D16
                 List<int> tempSolution = new List<int>();
                 for(int k = 1; k<= InputList.Count;k++)
                 {
-                    Console.WriteLine("Iteratie: " + k + "/"+InputList.Count);
+                    Console.WriteLine(phase.ToString() + ", Iteratie: " + k + "/"+InputList.Count);
                     //Opmaken van de lijst van de vermenigvuldiging. Deze lijst is gebaseerd op de 0 1 0 -1 lijst
                     //Het aantal keer dat een cijfer zich herhaalt wordt bepaald door iteratie (tussen 1 en k keer)
                     List<int> RepeatingPatternPhaseX = new List<int>();
