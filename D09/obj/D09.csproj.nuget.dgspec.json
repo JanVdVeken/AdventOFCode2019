@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\CS\\adventOfCode2019\\D09\\D09.csproj": {}
+  },
+  "projects": {
+    "E:\\CS\\adventOfCode2019\\D09\\D09.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\CS\\adventOfCode2019\\D09\\D09.csproj",
+        "projectName": "D09",
+        "projectPath": "E:\\CS\\adventOfCode2019\\D09\\D09.csproj",
+        "packagesPath": "C:\\Users\\Jan\\.nuget\\packages\\",
+        "outputPath": "E:\\CS\\adventOfCode2019\\D09\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
